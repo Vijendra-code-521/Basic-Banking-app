@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:elevation="5dp"
+    app:cardUseCompatPadding="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roound_border">
+        <TextView
+            android:id="@+id/sendToUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vijndra Vishwakarma"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="@color/cardview_dark_background"/>
+
+        <TextView
+            android:id="@+id/sendToUserAcNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sendToUser"
+            android:layout_marginStart="30dp"
+            android:text="Account no : "
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/accountNoSendToUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="878789798789 "
+            android:layout_below="@+id/sendToUserAcNo"
+            android:textSize="20sp"
+            android:layout_marginStart="30dp"
+            />
+        <TextView
+            android:id="@+id/availableBalance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/accountNoSendToUser"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginStart="30dp"
+            android:text="balance"/>
+        <TextView
+            android:id="@+id/transferBtnsend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/availableBalance"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="Transfer"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffff"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="@drawable/round_button"
+            android:layout_marginBottom="10dp"
+            app:backgroundTint="@color/cardview_dark_background"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

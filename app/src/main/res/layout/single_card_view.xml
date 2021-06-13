@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:elevation="5dp"
+    app:cardUseCompatPadding="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roound_border">
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vijndra Vishwakarma"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="@color/cardview_dark_background"/>
+        <TextView
+            android:id="@+id/acNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Account no : "
+            android:layout_below="@+id/userName"
+            android:textSize="20sp"
+            android:layout_marginStart="30dp"
+            android:textColor="@color/cardview_dark_background"/>
+        <TextView
+            android:id="@+id/accountNO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="878789798789 "
+             android:layout_below="@+id/acNo"
+            android:textSize="20sp"
+            android:layout_marginStart="30dp"
+            />
+        <TextView
+            android:id="@+id/acBalance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Account Balance : "
+            android:layout_below="@+id/accountNO"
+            android:textSize="20sp"
+            android:layout_marginStart="30dp"
+            android:textColor="@color/cardview_dark_background"/>
+        <TextView
+            android:id="@+id/accountbalance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="87878 "
+            android:layout_below="@+id/acBalance"
+            android:textSize="20sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="10dp"
+            />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
